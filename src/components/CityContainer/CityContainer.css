@@ -1,0 +1,9 @@
+.CityContainer {
+    margin: auto;
+    max-width: 300px;
+}
+
+.forecastContainer {
+    display: flex;
+    justify-content: space-between;
+}

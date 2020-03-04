@@ -1,0 +1,54 @@
+.Forecast {
+    height: 140px;
+    width: 55px;
+    background-color: #ffffff;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
+    padding-bottom: 0.5rem;
+}
+
+.bottomContainer:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width   : 100%;
+    border-bottom: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+
+.topContainer {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topContainer img {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.temperature {
+    font-size: 12pt;
+    margin:0;
+}
+
+.bottomContainer {
+    height: 35%;
+    background-color: #E5F6FD;
+    border-top: 1px solid #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.25rem;
+    position: relative;
+}
+
+.bottomContainer p {
+    font-size: 8pt;
+    padding: 0.1rem 0;
+}

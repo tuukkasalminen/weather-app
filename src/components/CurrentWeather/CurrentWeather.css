@@ -1,0 +1,59 @@
+.CurrentWeather {
+    border: 1px solid #E6E6E6;
+    padding: 1.25rem;
+    height: 150px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.flex {
+    width: 260px;
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 330px) {
+    .flex {
+        width: 250px;
+    }
+  }
+
+.city {
+    display: block;
+    text-align: start;
+    font-size: 16pt;
+}
+
+
+.temp {
+    font-size: 22pt;
+    margin-left: auto;
+    display:table;
+}
+.temp img {
+    width: 65px;
+    height: 65px;
+    margin-right: 0.25rem;
+}
+
+.temp span {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 1.25rem;
+}
+
+.date {
+    text-align: start;
+    font-size: 12pt;
+    position: absolute;
+    bottom: 0;
+}
+
+.otherInfo {
+    margin-left: auto;
+    text-align: end;
+}
