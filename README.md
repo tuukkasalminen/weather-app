@@ -1,7 +1,12 @@
-To run the app
+<pre>
+To run the app:
+
 
 cd weather-app
-yarn start
+npm install
+npm start
+
 Go to localhost:3000 in your browser
 
-Put your API-key in config.js file
+Put your API-key to config.js file
+</pre>
