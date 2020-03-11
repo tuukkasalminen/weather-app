@@ -1,6 +1,6 @@
 import React from 'react';
 import './CityContainer.css';
-import CurrentWeather from '../CurrentWeather/CurrentWeather'
+import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import Forecast from '../Forecast/Forecast';
 
 function CityContainer({ currentWeather, forecast }) {
@@ -11,11 +11,12 @@ function CityContainer({ currentWeather, forecast }) {
 
   return (
     <div className="CityContainer">
-        <CurrentWeather data={currentWeather} />
-        <div className="forecastContainer">
-          {forecast && forecast.list.map((list, index) => 
-            index<5 && <Forecast key={index} data={list} />)}
-        </div>
+      <CurrentWeather data={currentWeather} />
+      <div className="forecastContainer">
+        {forecast && forecast.list.map(
+          (singleFc, index) => index < 5 && <Forecast key={singleFc.dt} data={singleFc} />,
+        )}
+      </div>
     </div>
   );
 }
